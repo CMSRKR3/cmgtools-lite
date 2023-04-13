@@ -46,7 +46,6 @@ dimuon = getHeppyOption("dimuon",False) # Use di-muon trigger?
 if (not data) and (not mc):
    data=True
 
-
 # get datasets  
 Ncomps=[]
 if data:
@@ -56,26 +55,24 @@ if mc:
   from CMGTools.RootTools.samples.samples_DielectronX_BParkingMC_NanoAOD import samples as allMC
   Ncomps = allMC
 
-
-print Ncomps[0].files
 #create components
 selectedComponents=[]
 if not test:
   for comp in Ncomps:
-     if filterSample!="":
-        if filterSample not in comp.name:
-           continue
-     comp.splitFactor = int(njobs)
-     selectedComponents.append(comp)
+    if filterSample!="":
+      if filterSample not in comp.name:
+        continue
+      comp.splitFactor = int(njobs)
+      selectedComponents.append(comp)
 
 else:
-   for comp in Ncomps:
-     if filterSample!="":
-        if filterSample not in comp.name:
-           continue
-     comp.splitFactor = 1
-     comp.files=comp.files[:int(nfiles)]
-     selectedComponents.append(comp)
+  for comp in Ncomps:
+    if filterSample!="":
+      if filterSample not in comp.name:
+        continue
+      comp.splitFactor = 1
+      comp.files=comp.files[:int(nfiles)]
+      selectedComponents.append(comp)
 
 # status
 printSummary(selectedComponents)
@@ -93,6 +90,7 @@ BparkSkim = ""
 modules = []
 br_in = ""
 
+################################# data ###########################################
 
 # code loaded here just like in cmssw cfg
 if kmumu and data:
@@ -194,7 +192,7 @@ if kstaree_kee and mc:
 branchsel_in = os.environ['CMSSW_BASE']+"/src/CMGTools/RKAnalysis/cfg/"+br_in
 
 # only write the branches in this file in ADDITION of what is produce by module
-branchsel_out = os.environ['CMSSW_BASE']+"/src/CMGTools/RKAnalysis/cfg/branchRk_out.txt"
+branchsel_out = os.environ['CMSSW_BASE']+"/src/CMGTools/RKAnalysis/cfg/branchRkee_out.txt"
 
 
 compression = "ZLIB:3" #"LZ4:4" #"LZMA:9"
