@@ -25,7 +25,7 @@ def byCompName(components, regexps):
 filterSample = str(getHeppyOption("filterSample",""))
 mc = getHeppyOption("mc",False)
 data = getHeppyOption("data",False)
-njobs = getHeppyOption("njobs",10)
+njobs = getHeppyOption("njobs",1)
 nfiles = getHeppyOption("nfiles",1)
 kmumu = getHeppyOption("kmumu",False)
 kstarmumu_pimumu= getHeppyOption("kstarmumu_pimumu",False)
@@ -101,8 +101,8 @@ if kmumu and data:
 #  Bcuts=dict ( Pt= 10.5, MinMass=4.7, MaxMass=6.0, LxySign=1.0, Cos2D=0.99, Prob=0.001, L1Pt= 7.2, L2Pt= 1.0, KPt= 1.0, Mllmin=0, Mllmax=5 )
   # probe cuts 
   #Bcuts=dict ( Pt= 3.0, MinMass=4.7, MaxMass=6.0, LxySign=1.0, Cos2D=0.9, Prob=0.01, L1Pt= 1.0, L2Pt= 1.0, KPt= 1.0, Mllmin=0, Mllmax=5 )
-  BparkSkim=SkimCuts("BToKMuMu",Bcuts)
   modules = KMuMuData(modules,Bcuts,tagmu)
+  BparkSkim=SkimCutsForData("BToKMuMu",Bcuts)
 
 
 if kee and data:
@@ -121,8 +121,10 @@ if kee and data:
   if onlyPFe and onlyLowPtAndPFe: 
      print "Only PF e flag AND only lowpT andPF e flag enabled. Results may be invalid. Terminate"
      exit()
-  BparkSkim=SkimCuts("BToKEE",Bcuts)
   modules = KEEData(modules,Bcuts,onlyPFe,onlyLowPtAndPFe)
+  # construct cut expression string, see RKAnalysis/python/tools/nanoAOD/BParking_modules.py
+  # HLT and L1 requirements are set in  KAnalysis/python/tools/nanoAOD/BParking_modules.py
+  BparkSkim=SkimCutsForData("BToKEE",Bcuts)
 
 
 ################################# MC ###########################################

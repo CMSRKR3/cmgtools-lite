@@ -1,0 +1,1003 @@
+******************************************************************************
+*Tree    :Events    : Events                                                 *
+*Entries :     1404 : Total =        23580734 bytes  File  Size =    8129414 *
+*        :          : Tree compression factor =   2.89                       *
+******************************************************************************
+*Br    0 :run       : run/i                                                  *
+*Entries :     1404 : Total  Size=       6237 bytes  File Size  =        334 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=  17.25     *
+*............................................................................*
+*Br    1 :luminosityBlock : luminosityBlock/i                                *
+*Entries :     1404 : Total  Size=       6309 bytes  File Size  =        394 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=  14.68     *
+*............................................................................*
+*Br    2 :event     : event/l                                                *
+*Entries :     1404 : Total  Size=      11873 bytes  File Size  =       4358 *
+*Baskets :        2 : Basket Size=      14336 bytes  Compression=   2.61     *
+*............................................................................*
+*Br    3 :bunchCrossing : bunchCrossing/i                                    *
+*Entries :     1404 : Total  Size=       6297 bytes  File Size  =       2770 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   2.09     *
+*............................................................................*
+*Br    4 :nBToKEE   : UInt_t BToKEE Variable                                 *
+*Entries :     1404 : Total  Size=       6267 bytes  File Size  =       1682 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   3.43     *
+*............................................................................*
+*Br    5 :BToKEE_D0_mass_LepToK_KToPi :                                      *
+*         | Float_t userFloat("D0_mass_LepToK_KToPi")                        *
+*Entries :     1404 : Total  Size=      98903 bytes  File Size  =      77920 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.26     *
+*............................................................................*
+*Br    6 :BToKEE_D0_mass_LepToPi_KToK :                                      *
+*         | Float_t userFloat("D0_mass_LepToPi_KToK")                        *
+*Entries :     1404 : Total  Size=      98903 bytes  File Size  =      74840 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.31     *
+*............................................................................*
+*Br    7 :BToKEE_b_iso03 : Float_t userFloat("b_iso03")                      *
+*Entries :     1404 : Total  Size=      98799 bytes  File Size  =      40864 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   2.40     *
+*............................................................................*
+*Br    8 :BToKEE_b_iso03_dca : Float_t userFloat("b_iso03_dca")              *
+*Entries :     1404 : Total  Size=      98831 bytes  File Size  =      24952 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   3.94     *
+*............................................................................*
+*Br    9 :BToKEE_b_iso03_dca_tight : Float_t userFloat("b_iso03_dca_tight")  *
+*Entries :     1404 : Total  Size=      98879 bytes  File Size  =      22252 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   4.41     *
+*............................................................................*
+*Br   10 :BToKEE_b_iso04 : Float_t userFloat("b_iso04")                      *
+*Entries :     1404 : Total  Size=      98799 bytes  File Size  =      43208 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   2.27     *
+*............................................................................*
+*Br   11 :BToKEE_b_iso04_dca : Float_t userFloat("b_iso04_dca")              *
+*Entries :     1404 : Total  Size=      98831 bytes  File Size  =      26468 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   3.71     *
+*............................................................................*
+*Br   12 :BToKEE_b_iso04_dca_tight : Float_t userFloat("b_iso04_dca_tight")  *
+*Entries :     1404 : Total  Size=      98879 bytes  File Size  =      24416 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   4.02     *
+*............................................................................*
+*Br   13 :BToKEE_cos2D : Float_t userFloat("cos_theta_2D")                   *
+*Entries :     1404 : Total  Size=      98790 bytes  File Size  =      73336 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.34     *
+*............................................................................*
+*Br   14 :BToKEE_eta : Float_t eta                                           *
+*Entries :     1404 : Total  Size=      98754 bytes  File Size  =      50436 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.95     *
+*............................................................................*
+*Br   15 :BToKEE_fit_cos2D : Float_t userFloat("fitted_cos_theta_2D")        *
+*Entries :     1404 : Total  Size=      98825 bytes  File Size  =      73348 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.34     *
+*............................................................................*
+*Br   16 :BToKEE_fit_eta : Float_t userFloat("fitted_eta")                   *
+*Entries :     1404 : Total  Size=      98802 bytes  File Size  =      79364 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.24     *
+*............................................................................*
+*Br   17 :BToKEE_fit_k_eta : Float_t userFloat("fitted_k_eta")               *
+*Entries :     1404 : Total  Size=      98818 bytes  File Size  =      87200 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.13     *
+*............................................................................*
+*Br   18 :BToKEE_fit_k_phi : Float_t userFloat("fitted_k_phi")               *
+*Entries :     1404 : Total  Size=      98818 bytes  File Size  =      86692 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.13     *
+*............................................................................*
+*Br   19 :BToKEE_fit_k_pt : Float_t userFloat("fitted_k_pt")                 *
+*Entries :     1404 : Total  Size=      98810 bytes  File Size  =      73244 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.34     *
+*............................................................................*
+*Br   20 :BToKEE_fit_l1_eta : Float_t userFloat("fitted_l1_eta")             *
+*Entries :     1404 : Total  Size=      98826 bytes  File Size  =      63744 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.54     *
+*............................................................................*
+*Br   21 :BToKEE_fit_l1_phi : Float_t userFloat("fitted_l1_phi")             *
+*Entries :     1404 : Total  Size=      98826 bytes  File Size  =      59864 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.64     *
+*............................................................................*
+*Br   22 :BToKEE_fit_l1_pt : Float_t userFloat("fitted_l1_pt")               *
+*Entries :     1404 : Total  Size=      98818 bytes  File Size  =      72988 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.35     *
+*............................................................................*
+*Br   23 :BToKEE_fit_l2_eta : Float_t userFloat("fitted_l2_eta")             *
+*Entries :     1404 : Total  Size=      98826 bytes  File Size  =      64936 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.51     *
+*............................................................................*
+*Br   24 :BToKEE_fit_l2_phi : Float_t userFloat("fitted_l2_phi")             *
+*Entries :     1404 : Total  Size=      98826 bytes  File Size  =      60612 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.62     *
+*............................................................................*
+*Br   25 :BToKEE_fit_l2_pt : Float_t userFloat("fitted_l2_pt")               *
+*Entries :     1404 : Total  Size=      98818 bytes  File Size  =      72388 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.36     *
+*............................................................................*
+*Br   26 :BToKEE_fit_mass : Float_t userFloat("fitted_mass")                 *
+*Entries :     1404 : Total  Size=      98810 bytes  File Size  =      66416 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.48     *
+*............................................................................*
+*Br   27 :BToKEE_fit_massErr : Float_t userFloat("fitted_massErr")           *
+*Entries :     1404 : Total  Size=      98834 bytes  File Size  =      75368 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.30     *
+*............................................................................*
+*Br   28 :BToKEE_fit_phi : Float_t userFloat("fitted_phi")                   *
+*Entries :     1404 : Total  Size=      98802 bytes  File Size  =      72960 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.35     *
+*............................................................................*
+*Br   29 :BToKEE_fit_pt : Float_t userFloat("fitted_pt")                     *
+*Entries :     1404 : Total  Size=      98794 bytes  File Size  =      72600 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.35     *
+*............................................................................*
+*Br   30 :BToKEE_k_iso03 : Float_t userFloat("k_iso03")                      *
+*Entries :     1404 : Total  Size=      98799 bytes  File Size  =      54144 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.81     *
+*............................................................................*
+*Br   31 :BToKEE_k_iso03_dca : Float_t userFloat("k_iso03_dca")              *
+*Entries :     1404 : Total  Size=      98831 bytes  File Size  =      41768 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   2.35     *
+*............................................................................*
+*Br   32 :BToKEE_k_iso03_dca_tight : Float_t userFloat("k_iso03_dca_tight")  *
+*Entries :     1404 : Total  Size=      98879 bytes  File Size  =      23756 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   4.13     *
+*............................................................................*
+*Br   33 :BToKEE_k_iso04 : Float_t userFloat("k_iso04")                      *
+*Entries :     1404 : Total  Size=      98799 bytes  File Size  =      54200 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.81     *
+*............................................................................*
+*Br   34 :BToKEE_k_iso04_dca : Float_t userFloat("k_iso04_dca")              *
+*Entries :     1404 : Total  Size=      98831 bytes  File Size  =      48716 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   2.02     *
+*............................................................................*
+*Br   35 :BToKEE_k_iso04_dca_tight : Float_t userFloat("k_iso04_dca_tight")  *
+*Entries :     1404 : Total  Size=      98879 bytes  File Size  =      30200 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   3.25     *
+*............................................................................*
+*Br   36 :BToKEE_k_svip2d : Float_t userFloat("k_svip2d")                    *
+*Entries :     1404 : Total  Size=      98807 bytes  File Size  =      89048 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.10     *
+*............................................................................*
+*Br   37 :BToKEE_k_svip2d_err : Float_t userFloat("k_svip2d_err")            *
+*Entries :     1404 : Total  Size=      98839 bytes  File Size  =      81644 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.20     *
+*............................................................................*
+*Br   38 :BToKEE_k_svip3d : Float_t userFloat("k_svip3d")                    *
+*Entries :     1404 : Total  Size=      98807 bytes  File Size  =      89088 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.10     *
+*............................................................................*
+*Br   39 :BToKEE_k_svip3d_err : Float_t userFloat("k_svip3d_err")            *
+*Entries :     1404 : Total  Size=      98839 bytes  File Size  =      82280 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.19     *
+*............................................................................*
+*Br   40 :BToKEE_l1_iso03 : Float_t userFloat("l1_iso03")                    *
+*Entries :     1404 : Total  Size=      98807 bytes  File Size  =      14132 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   6.95     *
+*............................................................................*
+*Br   41 :BToKEE_l1_iso03_dca : Float_t userFloat("l1_iso03_dca")            *
+*Entries :     1404 : Total  Size=      98839 bytes  File Size  =      11580 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   8.48     *
+*............................................................................*
+*Br   42 :BToKEE_l1_iso03_dca_tight : Float_t userFloat("l1_iso03_dca_tight")*
+*Entries :     1404 : Total  Size=      98887 bytes  File Size  =      14608 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   6.72     *
+*............................................................................*
+*Br   43 :BToKEE_l1_iso04 : Float_t userFloat("l1_iso04")                    *
+*Entries :     1404 : Total  Size=      98807 bytes  File Size  =      15916 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   6.17     *
+*............................................................................*
+*Br   44 :BToKEE_l1_iso04_dca : Float_t userFloat("l1_iso04_dca")            *
+*Entries :     1404 : Total  Size=      98839 bytes  File Size  =      13072 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   7.51     *
+*............................................................................*
+*Br   45 :BToKEE_l1_iso04_dca_tight : Float_t userFloat("l1_iso04_dca_tight")*
+*Entries :     1404 : Total  Size=      98887 bytes  File Size  =      17716 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   5.54     *
+*............................................................................*
+*Br   46 :BToKEE_l2_iso03 : Float_t userFloat("l2_iso03")                    *
+*Entries :     1404 : Total  Size=      98807 bytes  File Size  =      14688 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   6.68     *
+*............................................................................*
+*Br   47 :BToKEE_l2_iso03_dca : Float_t userFloat("l2_iso03_dca")            *
+*Entries :     1404 : Total  Size=      98839 bytes  File Size  =      11760 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   8.35     *
+*............................................................................*
+*Br   48 :BToKEE_l2_iso03_dca_tight : Float_t userFloat("l2_iso03_dca_tight")*
+*Entries :     1404 : Total  Size=      98887 bytes  File Size  =      14676 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   6.69     *
+*............................................................................*
+*Br   49 :BToKEE_l2_iso04 : Float_t userFloat("l2_iso04")                    *
+*Entries :     1404 : Total  Size=      98807 bytes  File Size  =      16484 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   5.96     *
+*............................................................................*
+*Br   50 :BToKEE_l2_iso04_dca : Float_t userFloat("l2_iso04_dca")            *
+*Entries :     1404 : Total  Size=      98839 bytes  File Size  =      13388 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   7.34     *
+*............................................................................*
+*Br   51 :BToKEE_l2_iso04_dca_tight : Float_t userFloat("l2_iso04_dca_tight")*
+*Entries :     1404 : Total  Size=      98887 bytes  File Size  =      17616 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   5.58     *
+*............................................................................*
+*Br   52 :BToKEE_l_xy : Float_t userFloat("l_xy")                            *
+*Entries :     1404 : Total  Size=      98775 bytes  File Size  =      87512 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.12     *
+*............................................................................*
+*Br   53 :BToKEE_l_xy_unc : Float_t userFloat("l_xy_unc")                    *
+*Entries :     1404 : Total  Size=      98807 bytes  File Size  =      81704 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.20     *
+*............................................................................*
+*Br   54 :BToKEE_mass : Float_t mass                                         *
+*Entries :     1404 : Total  Size=      98762 bytes  File Size  =      33572 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   2.92     *
+*............................................................................*
+*Br   55 :BToKEE_maxDR : Float_t userFloat("max_dr")                         *
+*Entries :     1404 : Total  Size=      98784 bytes  File Size  =      75908 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.29     *
+*............................................................................*
+*Br   56 :BToKEE_minDR : Float_t userFloat("min_dr")                         *
+*Entries :     1404 : Total  Size=      98784 bytes  File Size  =      18968 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   5.18     *
+*............................................................................*
+*Br   57 :BToKEE_mllErr_llfit :                                              *
+*         | Float_t userCand("dilepton").userFloat("fitted_massErr")         *
+*Entries :     1404 : Total  Size=      98862 bytes  File Size  =      10660 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   9.21     *
+*............................................................................*
+*Br   58 :BToKEE_mll_fullfit : Float_t userFloat("fitted_mll")               *
+*Entries :     1404 : Total  Size=      98830 bytes  File Size  =      72256 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.36     *
+*............................................................................*
+*Br   59 :BToKEE_mll_llfit :                                                 *
+*         | Float_t userCand("dilepton").userFloat("fitted_mass")            *
+*Entries :     1404 : Total  Size=      98838 bytes  File Size  =      10688 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   9.19     *
+*............................................................................*
+*Br   60 :BToKEE_mll_raw : Float_t userCand("dilepton").mass()               *
+*Entries :     1404 : Total  Size=      98806 bytes  File Size  =      10664 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   9.21     *
+*............................................................................*
+*Br   61 :BToKEE_phi : Float_t phi                                           *
+*Entries :     1404 : Total  Size=      98754 bytes  File Size  =      45664 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   2.15     *
+*............................................................................*
+*Br   62 :BToKEE_pt : Float_t pt                                             *
+*Entries :     1404 : Total  Size=      98746 bytes  File Size  =      69368 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.42     *
+*............................................................................*
+*Br   63 :BToKEE_svprob : Float_t userFloat("sv_prob")                       *
+*Entries :     1404 : Total  Size=      98792 bytes  File Size  =      53908 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.82     *
+*............................................................................*
+*Br   64 :BToKEE_vtx_ex : Float_t userFloat("vtx_ex")                        *
+*Entries :     1404 : Total  Size=      98791 bytes  File Size  =      79700 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.23     *
+*............................................................................*
+*Br   65 :BToKEE_vtx_ey : Float_t userFloat("vtx_ey")                        *
+*Entries :     1404 : Total  Size=      98791 bytes  File Size  =      80220 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.22     *
+*............................................................................*
+*Br   66 :BToKEE_vtx_ez : Float_t userFloat("vtx_ez")                        *
+*Entries :     1404 : Total  Size=      98791 bytes  File Size  =      79268 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.24     *
+*............................................................................*
+*Br   67 :BToKEE_vtx_x : Float_t userFloat("vtx_x")                          *
+*Entries :     1404 : Total  Size=      98783 bytes  File Size  =      79868 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.23     *
+*............................................................................*
+*Br   68 :BToKEE_vtx_y : Float_t userFloat("vtx_y")                          *
+*Entries :     1404 : Total  Size=      98783 bytes  File Size  =      80628 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.22     *
+*............................................................................*
+*Br   69 :BToKEE_vtx_z : Float_t userFloat("vtx_z")                          *
+*Entries :     1404 : Total  Size=      98783 bytes  File Size  =      73196 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   1.34     *
+*............................................................................*
+*Br   70 :BToKEE_b_n_isotrk : Int_t userInt("b_n_isotrk")                    *
+*Entries :     1404 : Total  Size=      98814 bytes  File Size  =      15872 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   6.19     *
+*............................................................................*
+*Br   71 :BToKEE_b_n_isotrk_dca : Int_t userInt("b_n_isotrk_dca")            *
+*Entries :     1404 : Total  Size=      98846 bytes  File Size  =      11908 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   8.25     *
+*............................................................................*
+*Br   72 :BToKEE_b_n_isotrk_dca_tight : Int_t userInt("b_n_isotrk_dca_tight")*
+*Entries :     1404 : Total  Size=      98894 bytes  File Size  =      11768 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   8.35     *
+*............................................................................*
+*Br   73 :BToKEE_charge : Int_t electric charge                              *
+*Entries :     1404 : Total  Size=      98780 bytes  File Size  =       6796 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  14.45     *
+*............................................................................*
+*Br   74 :BToKEE_kIdx : Int_t userInt("k_idx")                               *
+*Entries :     1404 : Total  Size=      98767 bytes  File Size  =      22840 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   4.30     *
+*............................................................................*
+*Br   75 :BToKEE_k_n_isotrk : Int_t userInt("k_n_isotrk")                    *
+*Entries :     1404 : Total  Size=      98814 bytes  File Size  =      18128 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   5.42     *
+*............................................................................*
+*Br   76 :BToKEE_k_n_isotrk_dca : Int_t userInt("k_n_isotrk_dca")            *
+*Entries :     1404 : Total  Size=      98846 bytes  File Size  =      13836 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   7.10     *
+*............................................................................*
+*Br   77 :BToKEE_k_n_isotrk_dca_tight : Int_t userInt("k_n_isotrk_dca_tight")*
+*Entries :     1404 : Total  Size=      98894 bytes  File Size  =      10748 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   9.14     *
+*............................................................................*
+*Br   78 :BToKEE_l1Idx : Int_t userInt("l1_idx")                             *
+*Entries :     1404 : Total  Size=      98775 bytes  File Size  =       4376 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  22.44     *
+*............................................................................*
+*Br   79 :BToKEE_l1_n_isotrk : Int_t userInt("l1_n_isotrk")                  *
+*Entries :     1404 : Total  Size=      98822 bytes  File Size  =       9068 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  10.83     *
+*............................................................................*
+*Br   80 :BToKEE_l1_n_isotrk_dca : Int_t userInt("l1_n_isotrk_dca")          *
+*Entries :     1404 : Total  Size=      98854 bytes  File Size  =       7888 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  12.45     *
+*............................................................................*
+*Br   81 :BToKEE_l1_n_isotrk_dca_tight :                                     *
+*         | Int_t userInt("l1_n_isotrk_dca_tight")                           *
+*Entries :     1404 : Total  Size=      98902 bytes  File Size  =       9856 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   9.97     *
+*............................................................................*
+*Br   82 :BToKEE_l2Idx : Int_t userInt("l2_idx")                             *
+*Entries :     1404 : Total  Size=      98775 bytes  File Size  =       4500 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  21.82     *
+*............................................................................*
+*Br   83 :BToKEE_l2_n_isotrk : Int_t userInt("l2_n_isotrk")                  *
+*Entries :     1404 : Total  Size=      98822 bytes  File Size  =       9156 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  10.73     *
+*............................................................................*
+*Br   84 :BToKEE_l2_n_isotrk_dca : Int_t userInt("l2_n_isotrk_dca")          *
+*Entries :     1404 : Total  Size=      98854 bytes  File Size  =       7908 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  12.42     *
+*............................................................................*
+*Br   85 :BToKEE_l2_n_isotrk_dca_tight :                                     *
+*         | Int_t userInt("l2_n_isotrk_dca_tight")                           *
+*Entries :     1404 : Total  Size=      98902 bytes  File Size  =       9832 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=   9.99     *
+*............................................................................*
+*Br   86 :BToKEE_n_k_used : Int_t userInt("n_k_used")                        *
+*Entries :     1404 : Total  Size=      98798 bytes  File Size  =       3976 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  24.70     *
+*............................................................................*
+*Br   87 :BToKEE_n_l1_used : Int_t userInt("n_l1_used")                      *
+*Entries :     1404 : Total  Size=      98806 bytes  File Size  =       6508 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  15.09     *
+*............................................................................*
+*Br   88 :BToKEE_n_l2_used : Int_t userInt("n_l2_used")                      *
+*Entries :     1404 : Total  Size=      98806 bytes  File Size  =       6256 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  15.70     *
+*............................................................................*
+*Br   89 :BToKEE_pdgId :                                                     *
+*         | Int_t PDG code assigned by the event reconstruction (not by MC truth)*
+*Entries :     1404 : Total  Size=      98821 bytes  File Size  =       2860 *
+*Baskets :        4 : Basket Size=     128512 bytes  Compression=  34.33     *
+*............................................................................*
+*Br   90 :BToKEE_post_vtx_sel : Bool_t Satisfies post-vertexing selections?  *
+*Entries :     1404 : Total  Size=      29499 bytes  File Size  =       1866 *
+*Baskets :        2 : Basket Size=      43520 bytes  Compression=  15.47     *
+*............................................................................*
+*Br   91 :BToKEE_pre_vtx_sel : Bool_t Satisfies pre-vertexing selections?    *
+*Entries :     1404 : Total  Size=      29493 bytes  File Size  =       1860 *
+*Baskets :        2 : Basket Size=      43520 bytes  Compression=  15.51     *
+*............................................................................*
+*Br   92 :BeamSpot_sigmaZ : Float_t Width of BeamSpot in z (cm)              *
+*Entries :     1404 : Total  Size=       6319 bytes  File Size  =        406 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=  14.25     *
+*............................................................................*
+*Br   93 :BeamSpot_sigmaZError : Float_t Error on width of BeamSpot in z (cm)*
+*Entries :     1404 : Total  Size=       6353 bytes  File Size  =        412 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=  14.06     *
+*............................................................................*
+*Br   94 :BeamSpot_z : Float_t BeamSpot center, z coordinate (cm)            *
+*Entries :     1404 : Total  Size=       6301 bytes  File Size  =        400 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=  14.44     *
+*............................................................................*
+*Br   95 :BeamSpot_zError :                                                  *
+*         | Float_t Error on BeamSpot center, z coordinate (cm)              *
+*Entries :     1404 : Total  Size=       6335 bytes  File Size  =        406 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=  14.25     *
+*............................................................................*
+*Br   96 :BeamSpot_type :                                                    *
+*         | Char_t BeamSpot type (Unknown = -1, Fake = 0, LHC = 1, Tracker = 2)*
+*Entries :     1404 : Total  Size=       2124 bytes  File Size  =        322 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.87     *
+*............................................................................*
+*Br   97 :nElectron : UInt_t slimmedElectrons for BPark after basic selection*
+*Entries :     1404 : Total  Size=       6310 bytes  File Size  =        758 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   7.61     *
+*............................................................................*
+*Br   98 :Electron_LPEleMvaID_2020Sept15RawValue :                           *
+*         | Float_t MVA ID for low-pT electrons, 2020Sept15 model            *
+*Entries :     1404 : Total  Size=      20020 bytes  File Size  =       1676 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=  11.52     *
+*............................................................................*
+*Br   99 :Electron_LPEleSeed_Fall17PtBiasedV1RawValue :                      *
+*         | Float_t Seed BDT for low-pT electrons, Fall17 ptBiased model     *
+*Entries :     1404 : Total  Size=      20052 bytes  File Size  =       1686 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=  11.45     *
+*............................................................................*
+*Br  100 :Electron_LPEleSeed_Fall17UnBiasedV1RawValue :                      *
+*         | Float_t Seed BDT for low-pT electrons, Fall17 unBiased model     *
+*Entries :     1404 : Total  Size=      20052 bytes  File Size  =       1686 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=  11.45     *
+*............................................................................*
+*Br  101 :Electron_PFEleMvaID_Fall17NoIsoV2RawValue :                        *
+*         | Float_t MVA ID for PF electrons, Fall17NoIsoV2RawValues          *
+*Entries :     1404 : Total  Size=      20037 bytes  File Size  =      14130 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   1.37     *
+*............................................................................*
+*Br  102 :Electron_PFEleMvaID_RetrainedRawValue :                            *
+*         | Float_t MVA ID for PF electrons, BParkRetrainRawValues           *
+*Entries :     1404 : Total  Size=      20016 bytes  File Size  =      14046 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   1.37     *
+*............................................................................*
+*Br  103 :Electron_dxy : Float_t dxy (with sign) wrt first PV, in cm         *
+*Entries :     1404 : Total  Size=      19880 bytes  File Size  =       9116 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   2.11     *
+*............................................................................*
+*Br  104 :Electron_dxyErr : Float_t dxy uncertainty, in cm                   *
+*Entries :     1404 : Total  Size=      19882 bytes  File Size  =       5770 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   3.34     *
+*............................................................................*
+*Br  105 :Electron_dz : Float_t dz (with sign) wrt first PV, in cm           *
+*Entries :     1404 : Total  Size=      19874 bytes  File Size  =       9446 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   2.04     *
+*............................................................................*
+*Br  106 :Electron_dzErr : Float_t dz uncertainty, in cm                     *
+*Entries :     1404 : Total  Size=      19876 bytes  File Size  =       5628 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   3.42     *
+*............................................................................*
+*Br  107 :Electron_dzTrg :                                                   *
+*         | Float_t dz from the corresponding triggered lepton, in cm        *
+*Entries :     1404 : Total  Size=      19904 bytes  File Size  =       6576 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   2.93     *
+*............................................................................*
+*Br  108 :Electron_eta : Float_t eta                                         *
+*Entries :     1404 : Total  Size=      19848 bytes  File Size  =       9920 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   1.94     *
+*............................................................................*
+*Br  109 :Electron_fBrem : Float_t brem fraction from the gsf fit            *
+*Entries :     1404 : Total  Size=      19885 bytes  File Size  =       9864 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   1.95     *
+*............................................................................*
+*Br  110 :Electron_ip3d : Float_t 3D impact parameter wrt first PV, in cm    *
+*Entries :     1404 : Total  Size=      19889 bytes  File Size  =       9010 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   2.14     *
+*............................................................................*
+*Br  111 :Electron_mass : Float_t mass                                       *
+*Entries :     1404 : Total  Size=      19854 bytes  File Size  =       1614 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=  11.93     *
+*............................................................................*
+*Br  112 :Electron_pfRelIso :                                                *
+*         | Float_t PF relative isolation dR=0.3, total (deltaBeta corrections)*
+*Entries :     1404 : Total  Size=      19929 bytes  File Size  =      13326 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   1.45     *
+*............................................................................*
+*Br  113 :Electron_phi : Float_t phi                                         *
+*Entries :     1404 : Total  Size=      19848 bytes  File Size  =       9696 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   1.99     *
+*............................................................................*
+*Br  114 :Electron_pt : Float_t pt                                           *
+*Entries :     1404 : Total  Size=      19842 bytes  File Size  =      13322 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   1.44     *
+*............................................................................*
+*Br  115 :Electron_sip3d :                                                   *
+*         | Float_t 3D impact parameter significance wrt first PV, in cm     *
+*Entries :     1404 : Total  Size=      19907 bytes  File Size  =       8540 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   2.25     *
+*............................................................................*
+*Br  116 :Electron_trkRelIso :                                               *
+*         | Float_t PF relative isolation dR=0.3, total (deltaBeta corrections)*
+*Entries :     1404 : Total  Size=      19934 bytes  File Size  =      13316 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   1.45     *
+*............................................................................*
+*Br  117 :Electron_vx : Float_t x coordinate of vertex position, in cm       *
+*Entries :     1404 : Total  Size=      19878 bytes  File Size  =       3946 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   4.88     *
+*............................................................................*
+*Br  118 :Electron_vy : Float_t y coordinate of vertex position, in cm       *
+*Entries :     1404 : Total  Size=      19878 bytes  File Size  =       3890 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   4.95     *
+*............................................................................*
+*Br  119 :Electron_vz : Float_t z coordinate of vertex position, in cm       *
+*Entries :     1404 : Total  Size=      19878 bytes  File Size  =       5550 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   3.47     *
+*............................................................................*
+*Br  120 :Electron_charge :                                                  *
+*         | Int_t electric charge from pfEle or chargeMode for lowPtGsf      *
+*Entries :     1404 : Total  Size=      19906 bytes  File Size  =       2254 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   8.54     *
+*............................................................................*
+*Br  121 :Electron_pdgId :                                                   *
+*         | Int_t PDG code assigned by the event reconstruction (not by MC truth)*
+*Entries :     1404 : Total  Size=      19911 bytes  File Size  =       2256 *
+*Baskets :        2 : Basket Size=      31744 bytes  Compression=   8.53     *
+*............................................................................*
+*Br  122 :Electron_PFEleMvaID_Fall17NoIsoV1wpLoose :                         *
+*         | Bool_t MVA ID for PF electrons, mvaEleID-Fall17-noIso-V1-wpLoose *
+*Entries :     1404 : Total  Size=       9944 bytes  File Size  =       2036 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   4.53     *
+*............................................................................*
+*Br  123 :Electron_PFEleMvaID_Fall17NoIsoV2wp80 :                            *
+*         | Bool_t MVA ID for PF electrons, mvaEleID-Fall17-noIso-V2-wp80    *
+*Entries :     1404 : Total  Size=       9926 bytes  File Size  =       1894 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   4.86     *
+*............................................................................*
+*Br  124 :Electron_PFEleMvaID_Fall17NoIsoV2wp90 :                            *
+*         | Bool_t MVA ID for PF electrons, mvaEleID-Fall17-noIso-V2-wp90    *
+*Entries :     1404 : Total  Size=       9926 bytes  File Size  =       1970 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   4.67     *
+*............................................................................*
+*Br  125 :Electron_PFEleMvaID_Fall17NoIsoV2wpLoose :                         *
+*         | Bool_t MVA ID for PF electrons, mvaEleID-Fall17-noIso-V2-wpLoose *
+*Entries :     1404 : Total  Size=       9944 bytes  File Size  =       2028 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   4.54     *
+*............................................................................*
+*Br  126 :Electron_convExtra :                                               *
+*         | Bool_t Flag to indicate if all conversion variables are stored   *
+*Entries :     1404 : Total  Size=       9832 bytes  File Size  =       1404 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.53     *
+*............................................................................*
+*Br  127 :Electron_convLead : Bool_t Matched to leading track from conversion*
+*Entries :     1404 : Total  Size=       9812 bytes  File Size  =       1402 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.54     *
+*............................................................................*
+*Br  128 :Electron_convLoose :                                               *
+*         | Bool_t Matched to a conversion satisfying Loose WP (see code)    *
+*Entries :     1404 : Total  Size=       9831 bytes  File Size  =       1404 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.53     *
+*............................................................................*
+*Br  129 :Electron_convOpen :                                                *
+*         | Bool_t Matched to a conversion in gsfTracksOpenConversions collection*
+*Entries :     1404 : Total  Size=       9834 bytes  File Size  =       1402 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.54     *
+*............................................................................*
+*Br  130 :Electron_convTight :                                               *
+*         | Bool_t Matched to a conversion satisfying Tight WP (see code)    *
+*Entries :     1404 : Total  Size=       9831 bytes  File Size  =       1404 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.53     *
+*............................................................................*
+*Br  131 :Electron_convTrail :                                               *
+*         | Bool_t Matched to trailing track from conversion                 *
+*Entries :     1404 : Total  Size=       9818 bytes  File Size  =       1404 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.53     *
+*............................................................................*
+*Br  132 :Electron_convVeto : Bool_t pass conversion veto                    *
+*Entries :     1404 : Total  Size=       9792 bytes  File Size  =       1406 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.52     *
+*............................................................................*
+*Br  133 :Electron_isLowPt : Bool_t electron is LowPt candidate              *
+*Entries :     1404 : Total  Size=       9794 bytes  File Size  =       1400 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.55     *
+*............................................................................*
+*Br  134 :Electron_isPF : Bool_t electron is PF candidate                    *
+*Entries :     1404 : Total  Size=       9776 bytes  File Size  =       1394 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.57     *
+*............................................................................*
+*Br  135 :Electron_isPFoverlap :                                             *
+*         | Bool_t flag lowPt ele overlapping with pf in selected_pf_collection*
+*Entries :     1404 : Total  Size=       9847 bytes  File Size  =       1408 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.52     *
+*............................................................................*
+*Br  136 :Electron_skipEle :                                                 *
+*         | Bool_t Is ele skipped (due to small dR or large dZ w.r.t. trigger)?*
+*Entries :     1404 : Total  Size=       9827 bytes  File Size  =       1400 *
+*Baskets :        2 : Basket Size=      19456 bytes  Compression=   6.55     *
+*............................................................................*
+*Br  137 :Rho_fixedGridRhoAll :                                              *
+*         | Float_t rho from all PF Candidates, no foreground removal (for isolation of prompt photons)*
+*Entries :     1404 : Total  Size=       6395 bytes  File Size  =       4702 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   1.23     *
+*............................................................................*
+*Br  138 :Rho_fixedGridRhoFastjetAll :                                       *
+*         | Float_t rho from all PF Candidates, used e.g. for JECs           *
+*Entries :     1404 : Total  Size=       6393 bytes  File Size  =       4768 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   1.22     *
+*............................................................................*
+*Br  139 :Rho_fixedGridRhoFastjetCentral :                                   *
+*         | Float_t rho from all PF Candidates for central region, used e.g. for JECs*
+*Entries :     1404 : Total  Size=       6432 bytes  File Size  =       4896 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   1.19     *
+*............................................................................*
+*Br  140 :Rho_fixedGridRhoFastjetCentralCalo :                               *
+*         | Float_t rho from calo towers with |eta| < 2.5, used e.g. egamma PFCluster isolation*
+*Entries :     1404 : Total  Size=       6462 bytes  File Size  =       5124 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   1.14     *
+*............................................................................*
+*Br  141 :Rho_fixedGridRhoFastjetCentralChargedPileUp :                      *
+*         | Float_t rho from charged PF Candidates for central region, used e.g. for JECs*
+*Entries :     1404 : Total  Size=       6501 bytes  File Size  =       4914 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   1.19     *
+*............................................................................*
+*Br  142 :Rho_fixedGridRhoFastjetCentralNeutral :                            *
+*         | Float_t rho from neutral PF Candidates with |eta| < 2.5, used e.g. for rho corrections of some lepton isolations*
+*Entries :     1404 : Total  Size=       6506 bytes  File Size  =       4750 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   1.23     *
+*............................................................................*
+*Br  143 :nProbeTracks :                                                     *
+*         | UInt_t track collection probe side for BPark after basic selection*
+*Entries :     1404 : Total  Size=       6336 bytes  File Size  =       2092 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   2.76     *
+*............................................................................*
+*Br  144 :ProbeTracks_DCASig :                                               *
+*         | Float_t significance of xy-distance of closest approach wrt beamspot*
+*Entries :     1404 : Total  Size=     705757 bytes  File Size  =     337880 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   2.09     *
+*............................................................................*
+*Br  145 :ProbeTracks_dxy : Float_t dxy (with sign) wrt first PV, in cm      *
+*Entries :     1404 : Total  Size=     705672 bytes  File Size  =     368589 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   1.91     *
+*............................................................................*
+*Br  146 :ProbeTracks_dxyS : Float_t dxy/err (with sign) wrt first PV, in cm *
+*Entries :     1404 : Total  Size=     705696 bytes  File Size  =     361874 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   1.95     *
+*............................................................................*
+*Br  147 :ProbeTracks_dz : Float_t dz (with sign) wrt first PV, in cm        *
+*Entries :     1404 : Total  Size=     705651 bytes  File Size  =     353936 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   1.99     *
+*............................................................................*
+*Br  148 :ProbeTracks_dzS : Float_t dz/err (with sign) wrt first PV, in cm   *
+*Entries :     1404 : Total  Size=     705675 bytes  File Size  =     367105 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   1.92     *
+*............................................................................*
+*Br  149 :ProbeTracks_dzTrg :                                                *
+*         | Float_t dz from the corresponding trigger lepton, in cm          *
+*Entries :     1404 : Total  Size=     705724 bytes  File Size  =     357343 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   1.97     *
+*............................................................................*
+*Br  150 :ProbeTracks_eta : Float_t eta                                      *
+*Entries :     1404 : Total  Size=     705640 bytes  File Size  =     400125 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   1.76     *
+*............................................................................*
+*Br  151 :ProbeTracks_mass : Float_t mass                                    *
+*Entries :     1404 : Total  Size=     705661 bytes  File Size  =      13622 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=  51.75     *
+*............................................................................*
+*Br  152 :ProbeTracks_phi : Float_t phi                                      *
+*Entries :     1404 : Total  Size=     705640 bytes  File Size  =     399217 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   1.77     *
+*............................................................................*
+*Br  153 :ProbeTracks_pt : Float_t pt                                        *
+*Entries :     1404 : Total  Size=     705619 bytes  File Size  =     238412 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   2.96     *
+*............................................................................*
+*Br  154 :ProbeTracks_vx : Float_t x coordinate of vertex position, in cm    *
+*Entries :     1404 : Total  Size=     705655 bytes  File Size  =     235368 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   2.99     *
+*............................................................................*
+*Br  155 :ProbeTracks_vy : Float_t y coordinate of vertex position, in cm    *
+*Entries :     1404 : Total  Size=     705655 bytes  File Size  =     235684 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   2.99     *
+*............................................................................*
+*Br  156 :ProbeTracks_vz : Float_t z coordinate of vertex position, in cm    *
+*Entries :     1404 : Total  Size=     705655 bytes  File Size  =     282092 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   2.50     *
+*............................................................................*
+*Br  157 :ProbeTracks_charge : Int_t electric charge                         *
+*Entries :     1404 : Total  Size=     705705 bytes  File Size  =      36324 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=  19.41     *
+*............................................................................*
+*Br  158 :ProbeTracks_isLostTrk : Int_t track from lostTrack collection      *
+*Entries :     1404 : Total  Size=     705781 bytes  File Size  =      15287 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=  46.12     *
+*............................................................................*
+*Br  159 :ProbeTracks_isPacked : Int_t track from packedCandidate collection *
+*Entries :     1404 : Total  Size=     705767 bytes  File Size  =      15338 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=  45.96     *
+*............................................................................*
+*Br  160 :ProbeTracks_nValidHits : Int_t Number of valid hits on track       *
+*Entries :     1404 : Total  Size=     705799 bytes  File Size  =     121380 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=   5.81     *
+*............................................................................*
+*Br  161 :ProbeTracks_pdgId :                                                *
+*         | Int_t PDG code assigned by the event reconstruction (not by MC truth)*
+*Entries :     1404 : Total  Size=     705733 bytes  File Size  =      36303 *
+*Baskets :       17 : Basket Size=     866304 bytes  Compression=  19.42     *
+*............................................................................*
+*Br  162 :ProbeTracks_isMatchedToEle :                                       *
+*         | Bool_t track was used to build a PF ele                          *
+*Entries :     1404 : Total  Size=     181327 bytes  File Size  =       5964 *
+*Baskets :        6 : Basket Size=     228352 bytes  Compression=  30.29     *
+*............................................................................*
+*Br  163 :ProbeTracks_isMatchedToLooseMuon :                                 *
+*         | Bool_t track was used to build a muon passing LooseID            *
+*Entries :     1404 : Total  Size=     181395 bytes  File Size  =       3796 *
+*Baskets :        6 : Basket Size=     228352 bytes  Compression=  47.60     *
+*............................................................................*
+*Br  164 :ProbeTracks_isMatchedToLowPtEle :                                  *
+*         | Bool_t track was used to build a low-pT ele                      *
+*Entries :     1404 : Total  Size=     181376 bytes  File Size  =       3790 *
+*Baskets :        6 : Basket Size=     228352 bytes  Compression=  47.67     *
+*............................................................................*
+*Br  165 :ProbeTracks_isMatchedToMediumMuon :                                *
+*         | Bool_t track was used to build a muon passing mediumID           *
+*Entries :     1404 : Total  Size=     181405 bytes  File Size  =       3802 *
+*Baskets :        6 : Basket Size=     228352 bytes  Compression=  47.53     *
+*............................................................................*
+*Br  166 :ProbeTracks_isMatchedToMuon : Bool_t track was used to build a muon*
+*Entries :     1404 : Total  Size=     181334 bytes  File Size  =       4158 *
+*Baskets :        6 : Basket Size=     228352 bytes  Compression=  43.45     *
+*............................................................................*
+*Br  167 :ProbeTracks_isMatchedToSoftMuon :                                  *
+*         | Bool_t track was used to build a muon passing softID             *
+*Entries :     1404 : Total  Size=     181385 bytes  File Size  =       3978 *
+*Baskets :        6 : Basket Size=     228352 bytes  Compression=  45.42     *
+*............................................................................*
+*Br  168 :ProbeTracks_skipTrack :                                            *
+*         | Bool_t Is track skipped (due to small dR or large dZ w.r.t. trigger)?*
+*Entries :     1404 : Total  Size=     181312 bytes  File Size  =       3726 *
+*Baskets :        6 : Basket Size=     228352 bytes  Compression=  48.48     *
+*............................................................................*
+*Br  169 :HLT_DoubleEle10_eta1p22_mMax6 : UChar_t hlt path                   *
+*Entries :     1404 : Total  Size=       2152 bytes  File Size  =        542 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.95     *
+*............................................................................*
+*Br  170 :HLT_DoubleEle9p5_eta1p22_mMax6 : UChar_t hlt path                  *
+*Entries :     1404 : Total  Size=       2157 bytes  File Size  =        556 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.88     *
+*............................................................................*
+*Br  171 :HLT_DoubleEle9_eta1p22_mMax6 : UChar_t hlt path                    *
+*Entries :     1404 : Total  Size=       2147 bytes  File Size  =        576 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.77     *
+*............................................................................*
+*Br  172 :HLT_DoubleEle8p5_eta1p22_mMax6 : UChar_t hlt path                  *
+*Entries :     1404 : Total  Size=       2157 bytes  File Size  =        604 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.65     *
+*............................................................................*
+*Br  173 :HLT_DoubleEle8_eta1p22_mMax6 : UChar_t hlt path                    *
+*Entries :     1404 : Total  Size=       2147 bytes  File Size  =        616 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.59     *
+*............................................................................*
+*Br  174 :HLT_DoubleEle7p5_eta1p22_mMax6 : UChar_t hlt path                  *
+*Entries :     1404 : Total  Size=       2157 bytes  File Size  =        648 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.47     *
+*............................................................................*
+*Br  175 :HLT_DoubleEle7_eta1p22_mMax6 : UChar_t hlt path                    *
+*Entries :     1404 : Total  Size=       2147 bytes  File Size  =        640 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.50     *
+*............................................................................*
+*Br  176 :HLT_DoubleEle6p5_eta1p22_mMax6 : UChar_t hlt path                  *
+*Entries :     1404 : Total  Size=       2157 bytes  File Size  =        604 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.65     *
+*............................................................................*
+*Br  177 :HLT_DoubleEle6_eta1p22_mMax6 : UChar_t hlt path                    *
+*Entries :     1404 : Total  Size=       2147 bytes  File Size  =        352 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.54     *
+*............................................................................*
+*Br  178 :HLT_DoubleEle5p5_eta1p22_mMax6 : UChar_t hlt path                  *
+*Entries :     1404 : Total  Size=       2157 bytes  File Size  =        356 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.50     *
+*............................................................................*
+*Br  179 :HLT_DoubleEle5_eta1p22_mMax6 : UChar_t hlt path                    *
+*Entries :     1404 : Total  Size=       2147 bytes  File Size  =        352 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.54     *
+*............................................................................*
+*Br  180 :HLT_DoubleEle4p5_eta1p22_mMax6 : UChar_t hlt path                  *
+*Entries :     1404 : Total  Size=       2157 bytes  File Size  =        356 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.50     *
+*............................................................................*
+*Br  181 :HLT_DoubleEle4_eta1p22_mMax6 : UChar_t hlt path                    *
+*Entries :     1404 : Total  Size=       2147 bytes  File Size  =        352 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.54     *
+*............................................................................*
+*Br  182 :L1_DoubleEG11_er1p2_dR_Max0p6 : UChar_t l1 seed                    *
+*Entries :     1404 : Total  Size=       2151 bytes  File Size  =        530 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   3.02     *
+*............................................................................*
+*Br  183 :L1_DoubleEG10p5_er1p2_dR_Max0p6 : UChar_t l1 seed                  *
+*Entries :     1404 : Total  Size=       2161 bytes  File Size  =        570 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.81     *
+*............................................................................*
+*Br  184 :L1_DoubleEG10_er1p2_dR_Max0p6 : UChar_t l1 seed                    *
+*Entries :     1404 : Total  Size=       2151 bytes  File Size  =        594 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.69     *
+*............................................................................*
+*Br  185 :L1_DoubleEG9p5_er1p2_dR_Max0p6 : UChar_t l1 seed                   *
+*Entries :     1404 : Total  Size=       2156 bytes  File Size  =        604 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.65     *
+*............................................................................*
+*Br  186 :L1_DoubleEG9_er1p2_dR_Max0p7 : UChar_t l1 seed                     *
+*Entries :     1404 : Total  Size=       2146 bytes  File Size  =        624 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.56     *
+*............................................................................*
+*Br  187 :L1_DoubleEG8p5_er1p2_dR_Max0p7 : UChar_t l1 seed                   *
+*Entries :     1404 : Total  Size=       2156 bytes  File Size  =        640 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.50     *
+*............................................................................*
+*Br  188 :L1_DoubleEG8_er1p2_dR_Max0p7 : UChar_t l1 seed                     *
+*Entries :     1404 : Total  Size=       2146 bytes  File Size  =        636 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.51     *
+*............................................................................*
+*Br  189 :L1_DoubleEG7p5_er1p2_dR_Max0p7 : UChar_t l1 seed                   *
+*Entries :     1404 : Total  Size=       2156 bytes  File Size  =        628 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.55     *
+*............................................................................*
+*Br  190 :L1_DoubleEG7_er1p2_dR_Max0p8 : UChar_t l1 seed                     *
+*Entries :     1404 : Total  Size=       2146 bytes  File Size  =        612 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.61     *
+*............................................................................*
+*Br  191 :L1_DoubleEG6p5_er1p2_dR_Max0p8 : UChar_t l1 seed                   *
+*Entries :     1404 : Total  Size=       2156 bytes  File Size  =        564 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   2.84     *
+*............................................................................*
+*Br  192 :L1_DoubleEG6_er1p2_dR_Max0p8 : UChar_t l1 seed                     *
+*Entries :     1404 : Total  Size=       2146 bytes  File Size  =        492 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   3.25     *
+*............................................................................*
+*Br  193 :L1_DoubleEG5p5_er1p2_dR_Max0p8 : UChar_t l1 seed                   *
+*Entries :     1404 : Total  Size=       2156 bytes  File Size  =        356 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.50     *
+*............................................................................*
+*Br  194 :L1_DoubleEG5_er1p2_dR_Max0p9 : UChar_t l1 seed                     *
+*Entries :     1404 : Total  Size=       2146 bytes  File Size  =        352 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.54     *
+*............................................................................*
+*Br  195 :L1_DoubleEG4p5_er1p2_dR_Max0p9 : UChar_t l1 seed                   *
+*Entries :     1404 : Total  Size=       2156 bytes  File Size  =        356 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.50     *
+*............................................................................*
+*Br  196 :L1_DoubleEG4_er1p2_dR_Max0p9 : UChar_t l1 seed                     *
+*Entries :     1404 : Total  Size=       2146 bytes  File Size  =        352 *
+*Baskets :        2 : Basket Size=       2048 bytes  Compression=   4.54     *
+*............................................................................*
+*Br  197 :nTrigObj  : UInt_t                                                 *
+*Entries :     1404 : Total  Size=       6257 bytes  File Size  =        376 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=  15.35     *
+*............................................................................*
+*Br  198 :TrigObj_pt : Float_t pt                                            *
+*Entries :     1404 : Total  Size=       6438 bytes  File Size  =        436 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  13.42     *
+*............................................................................*
+*Br  199 :TrigObj_eta : Float_t eta                                          *
+*Entries :     1404 : Total  Size=       6444 bytes  File Size  =        446 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  13.12     *
+*............................................................................*
+*Br  200 :TrigObj_phi : Float_t phi                                          *
+*Entries :     1404 : Total  Size=       6444 bytes  File Size  =        446 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  13.12     *
+*............................................................................*
+*Br  201 :TrigObj_l1pt : Float_t pt of associated L1 seed                    *
+*Entries :     1404 : Total  Size=       6470 bytes  File Size  =        424 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  13.81     *
+*............................................................................*
+*Br  202 :TrigObj_l1pt_2 : Float_t pt of associated secondary L1 seed        *
+*Entries :     1404 : Total  Size=       6490 bytes  File Size  =        396 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  14.79     *
+*............................................................................*
+*Br  203 :TrigObj_l2pt :                                                     *
+*         | Float_t pt of associated 'L2' seed (i.e. HLT before tracking/PF) *
+*Entries :     1404 : Total  Size=       6502 bytes  File Size  =        444 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  13.18     *
+*............................................................................*
+*Br  204 :TrigObj_id : Int_t ID of the object: 13 = Muon                     *
+*Entries :     1404 : Total  Size=       6456 bytes  File Size  =        388 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  15.08     *
+*............................................................................*
+*Br  205 :TrigObj_l1iso : Int_t iso of associated L1 seed                    *
+*Entries :     1404 : Total  Size=       6469 bytes  File Size  =        398 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  14.71     *
+*............................................................................*
+*Br  206 :TrigObj_l1charge : Int_t charge of associated L1 seed              *
+*Entries :     1404 : Total  Size=       6487 bytes  File Size  =        412 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  14.23     *
+*............................................................................*
+*Br  207 :TrigObj_filterBits : Int_t extra bits of associated information:   *
+*         |  1 = Muon filters for BPH parking for Muon;                      *
+*Entries :     1404 : Total  Size=       6550 bytes  File Size  =        404 *
+*Baskets :        2 : Basket Size=      15360 bytes  Compression=  14.52     *
+*............................................................................*
+*Br  208 :nOtherPV  : UInt_t                                                 *
+*Entries :     1404 : Total  Size=       6257 bytes  File Size  =        344 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=  16.77     *
+*............................................................................*
+*Br  209 :OtherPV_z :                                                        *
+*         | Float_t Z position of other primary vertices, excluding the main PV*
+*Entries :     1404 : Total  Size=      23278 bytes  File Size  =       8954 *
+*Baskets :        2 : Basket Size=      35840 bytes  Compression=   2.53     *
+*............................................................................*
+*Br  210 :OtherPV_score :                                                    *
+*         | Float_t scores of other primary vertices, excluding the main PV  *
+*Entries :     1404 : Total  Size=      23294 bytes  File Size  =       7930 *
+*Baskets :        2 : Basket Size=      35840 bytes  Compression=   2.86     *
+*............................................................................*
+*Br  211 :PV_ndof   : Float_t main primary vertex number of degree of freedom*
+*Entries :     1404 : Total  Size=       6299 bytes  File Size  =       2526 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   2.28     *
+*............................................................................*
+*Br  212 :PV_x      : Float_t main primary vertex position x coordinate      *
+*Entries :     1404 : Total  Size=       6278 bytes  File Size  =       1904 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   3.03     *
+*............................................................................*
+*Br  213 :PV_y      : Float_t main primary vertex position y coordinate      *
+*Entries :     1404 : Total  Size=       6278 bytes  File Size  =       1908 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   3.02     *
+*............................................................................*
+*Br  214 :PV_z      : Float_t main primary vertex position z coordinate      *
+*Entries :     1404 : Total  Size=       6278 bytes  File Size  =       4536 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   1.27     *
+*............................................................................*
+*Br  215 :PV_chi2   : Float_t main primary vertex reduced chi2               *
+*Entries :     1404 : Total  Size=       6284 bytes  File Size  =       2054 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   2.81     *
+*............................................................................*
+*Br  216 :PV_score  :                                                        *
+*         | Float_t main primary vertex score, i.e. sum pt2 of clustered objects*
+*Entries :     1404 : Total  Size=       6317 bytes  File Size  =       2672 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   2.16     *
+*............................................................................*
+*Br  217 :PV_npvs   : Int_t total number of reconstructed primary vertices   *
+*Entries :     1404 : Total  Size=       6298 bytes  File Size  =       1538 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   3.75     *
+*............................................................................*
+*Br  218 :PV_npvsGood :                                                      *
+*         | Int_t number of good reconstructed primary vertices. selection:  *
+*         | !isFake && ndof > 4 && abs(z) <= 24 && position.Rho <= 2         *
+*Entries :     1404 : Total  Size=       6385 bytes  File Size  =       1538 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   3.76     *
+*............................................................................*
+*Br  219 :nSV       : UInt_t                                                 *
+*Entries :     1404 : Total  Size=       6232 bytes  File Size  =        930 *
+*Baskets :        2 : Basket Size=       7168 bytes  Compression=   6.19     *
+*............................................................................*
+*Br  220 :SV_dlen   : Float_t decay length in cm                             *
+*Entries :     1404 : Total  Size=      11528 bytes  File Size  =       4058 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.70     *
+*............................................................................*
+*Br  221 :SV_dlenSig : Float_t decay length significance                     *
+*Entries :     1404 : Total  Size=      11550 bytes  File Size  =       3980 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.75     *
+*............................................................................*
+*Br  222 :SV_dxy    : Float_t 2D decay length in cm                          *
+*Entries :     1404 : Total  Size=      11526 bytes  File Size  =       3948 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.77     *
+*............................................................................*
+*Br  223 :SV_dxySig : Float_t 2D decay length significance                   *
+*Entries :     1404 : Total  Size=      11548 bytes  File Size  =       3922 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.79     *
+*............................................................................*
+*Br  224 :SV_pAngle : Float_t pointing angle, i.e. acos(p_SV * (SV - PV))    *
+*Entries :     1404 : Total  Size=      11564 bytes  File Size  =       2858 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   3.83     *
+*............................................................................*
+*Br  225 :SV_charge : Int_t sum of the charge of the SV tracks               *
+*Entries :     1404 : Total  Size=      11547 bytes  File Size  =       1926 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   5.69     *
+*............................................................................*
+*Br  226 :SV_chi2   : Float_t reduced chi2, i.e. chi/ndof                    *
+*Entries :     1404 : Total  Size=      11537 bytes  File Size  =       3622 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   3.02     *
+*............................................................................*
+*Br  227 :SV_eta    : Float_t eta                                            *
+*Entries :     1404 : Total  Size=      11508 bytes  File Size  =       4680 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.34     *
+*............................................................................*
+*Br  228 :SV_mass   : Float_t mass                                           *
+*Entries :     1404 : Total  Size=      11514 bytes  File Size  =       3854 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.84     *
+*............................................................................*
+*Br  229 :SV_ndof   : Float_t number of degrees of freedom                   *
+*Entries :     1404 : Total  Size=      11538 bytes  File Size  =       3066 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   3.57     *
+*............................................................................*
+*Br  230 :SV_phi    : Float_t phi                                            *
+*Entries :     1404 : Total  Size=      11508 bytes  File Size  =       4632 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.36     *
+*............................................................................*
+*Br  231 :SV_pt     : Float_t pt                                             *
+*Entries :     1404 : Total  Size=      11502 bytes  File Size  =       3906 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.80     *
+*............................................................................*
+*Br  232 :SV_x      : Float_t secondary vertex X position, in cm             *
+*Entries :     1404 : Total  Size=      11529 bytes  File Size  =       4212 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.60     *
+*............................................................................*
+*Br  233 :SV_y      : Float_t secondary vertex Y position, in cm             *
+*Entries :     1404 : Total  Size=      11529 bytes  File Size  =       4224 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.59     *
+*............................................................................*
+*Br  234 :SV_z      : Float_t secondary vertex Z position, in cm             *
+*Entries :     1404 : Total  Size=      11529 bytes  File Size  =       4616 *
+*Baskets :        2 : Basket Size=      21504 bytes  Compression=   2.37     *
+*............................................................................*
+*Br  235 :SV_ntracks : UChar_t number of tracks                              *
+*Entries :     1404 : Total  Size=       7662 bytes  File Size  =       1568 *
+*Baskets :        2 : Basket Size=      16896 bytes  Compression=   4.52     *
+*............................................................................*

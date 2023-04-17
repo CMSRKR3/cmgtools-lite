@@ -1,12 +1,12 @@
-
-def SkimCuts(Bdecay,Bcuts):
+def SkimCutsForData(Bdecay,Bcuts):
     BParking_skim_cut = ("Sum$( "+
 #                         "BToKMuMu_l_xy_unc>0 && BToKMuMu_l_xy/BToKMuMu_l_xy_unc>-1 && "+
                          Bdecay+"_fit_pt>{ptmin} && "+
                          Bdecay+"_fit_mass>{mmin} && "+
                          Bdecay+"_fit_mass<{mmax} && "+
                          Bdecay+"_l_xy_unc>0 && "+
-                         Bdecay+"_l_xy/"+Bdecay+"_l_xy_unc>{slxy} && "+
+                         Bdecay+"_l_xy/"+
+                         Bdecay+"_l_xy_unc>{slxy} && "+
                          Bdecay+"_fit_cos2D>{cos} && "+
                          Bdecay+"_svprob>{prob} &&"+
                          Bdecay+"_fit_l1_pt>{l1pt} &&"+
@@ -25,6 +25,7 @@ def SkimCuts(Bdecay,Bcuts):
                      kpt=Bcuts["KPt"],      mllmin=Bcuts["Mllmin"],
                      mllmax=Bcuts["Mllmax"]
                     )
+    print BParking_skim_cut
     return BParking_skim_cut
 
 
@@ -111,32 +112,30 @@ def KEEData ( process, Bcuts,use_PF=False,use_1LowPt_1PF=False):
       BKLLSelection = lambda l : l.fit_pt > Bcuts["Pt" ] and l.fit_cos2D > Bcuts["Cos2D"] and l.svprob > Bcuts["Prob"] and l.l_xy_unc >0 and (l.l_xy)/l.l_xy_unc > Bcuts["LxySign"] and l.mll_fullfit>Bcuts["Mllmin"] and l.fit_mass>Bcuts["MinMass"] and l.fit_mass<Bcuts["MaxMass"] and l.mll_fullfit<Bcuts["Mllmax"] and l.l1isPF == 1 and l.l2isPF == 1 and l.l1PFId>-30.5 and l.l2PFId>-50.0
     elif use_1LowPt_1PF and not use_PF:
       BKLLSelection = lambda l : l.fit_pt > Bcuts["Pt" ] and l.fit_cos2D > Bcuts["Cos2D"] and l.svprob > Bcuts["Prob"] and l.l_xy_unc >0 and (l.l_xy)/l.l_xy_unc > Bcuts["LxySign"] and l.mll_fullfit>Bcuts["Mllmin"] and l.fit_mass>Bcuts["MinMass"] and l.fit_mass<Bcuts["MaxMass"] and l.mll_fullfit<Bcuts["Mllmax"] and ( (l.l1isPF == 1 and l.l2isPF == 0 and l.l2isPFoverlap==0 and l.l1PFId>-2.0 and l.l2LowPtId>0.0) or (l.l1isPF == 0 and l.l2isPF == 1 and l.l1isPFoverlap==0 and l.l2PFId>-2.0 and l.l1LowPtId>0.0) )
-    else:
-      BKLLSelection = lambda l : l.fit_pt > Bcuts["Pt" ] and l.fit_cos2D > Bcuts["Cos2D"] and l.svprob > Bcuts["Prob"] and l.l_xy_unc >0 and (l.l_xy)/l.l_xy_unc > Bcuts["LxySign"] and l.mll_fullfit>Bcuts["Mllmin"] and l.fit_mass>Bcuts["MinMass"] and l.fit_mass<Bcuts["MaxMass"] and l.mll_fullfit<Bcuts["Mllmax"]
     
     BSkim = collectionSkimmer(input = "BToKEE",
                             output = "SkimBToKEE",
                             importedVariables = [
                                 "Electron_isPF","Electron_isPF",
                                 "Electron_isPFoverlap","Electron_isPFoverlap",
-                                "Electron_pfmvaId","Electron_pfmvaId",
-                                "Electron_mvaId","Electron_mvaId", 
-                                "Electron_LooseID", "Electron_LooseID", 
-                                "Electron_MediumID","Electron_MediumID",
-                                "Electron_TightID","Electron_TightID",
+                                # "Electron_pfmvaId","Electron_pfmvaId",
+                                # "Electron_mvaId","Electron_mvaId", 
+                                "Electron_PFEleMvaID_Fall17NoIsoV2wpLoose", "Electron_PFEleMvaID_Fall17NoIsoV2wpLoose", 
+                                "Electron_PFEleMvaID_Fall17NoIsoV2wp90","Electron_PFEleMvaID_Fall17NoIsoV2wp90",
+                                "Electron_PFEleMvaID_Fall17NoIsoV2wp80","Electron_PFEleMvaID_Fall17NoIsoV2wp80",
                                 "Electron_convVeto","Electron_convVeto"],
                             importIds = ["l1Idx","l2Idx",
                                          "l1Idx","l2Idx",
-                                         "l1Idx","l2Idx",
-                                         "l1Idx","l2Idx",
+                                         # "l1Idx","l2Idx",
+                                         # "l1Idx","l2Idx",
                                          "l1Idx","l2Idx",
                                          "l1Idx","l2Idx",
                                          "l1Idx","l2Idx",
                                          "l1Idx","l2Idx"],
                             varnames = ["l1isPF","l2isPF",
                                         "l1isPFoverlap","l2isPFoverlap",
-                                        "l1PFId","l2PFId",
-                                        "l1LowPtId","l2LowPtId",
+                                        # "l1PFId","l2PFId",
+                                        # "l1LowPtId","l2LowPtId",
                                         "l1LooseId","l2LooseId",
                                         "l1MediumId","l2MediumId",
                                         "l1TightId","l2TightId",
@@ -154,8 +153,9 @@ def KEEData ( process, Bcuts,use_PF=False,use_1LowPt_1PF=False):
                                         "l1_iso04",
                                         "fit_l2_pt","fit_l2_eta","fit_l2_phi",
                                         "l2_iso04",
-                                        "l1isPF","l2isPF","l1PFId","l2PFId",
-                                        "l1LowPtId","l2LowPtId",
+                                        "l1isPF","l2isPF",
+                                        # "l1PFId","l2PFId",
+                                        # "l1LowPtId","l2LowPtId",
                                         "b_iso04_dca","l1_iso04_dca",
                                         "l2_iso04_dca","k_iso04_dca",
                                         "k_svip3d","k_svip3d_err",
