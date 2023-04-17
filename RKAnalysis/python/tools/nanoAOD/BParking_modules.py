@@ -5,8 +5,7 @@ def SkimCutsForData(Bdecay,Bcuts):
                          Bdecay+"_fit_mass>{mmin} && "+
                          Bdecay+"_fit_mass<{mmax} && "+
                          Bdecay+"_l_xy_unc>0 && "+
-                         Bdecay+"_l_xy/"+
-                         Bdecay+"_l_xy_unc>{slxy} && "+
+                         Bdecay+"_l_xy/"+Bdecay+"_l_xy_unc>{slxy} && "+
                          Bdecay+"_fit_cos2D>{cos} && "+
                          Bdecay+"_svprob>{prob} &&"+
                          Bdecay+"_fit_l1_pt>{l1pt} &&"+
@@ -692,7 +691,7 @@ def KEEMC (process,Jpsi=[],use_PF=False,use_1lowPt_1PF=False):
    RecoE1 = genRecoMatcher( recoInput="Electron",
                              genInput = "genE1",
                              output = "recoE1",
-                             branches = ["pt","eta","phi","vx","vy","vz","isPF","pfmvaId","isPFoverlap","mvaId","charge","LooseID","MediumID","TightID","convVeto"],
+                             branches = ["pt","eta","phi","vx","vy","vz","isPF","isPFoverlap","charge","PFEleMvaID_Fall17NoIsoV2wpLoose","PFEleMvaID_Fall17NoIsoV2wp90","PFEleMvaID_Fall17NoIsoV2wp80","convVeto"],
                              cuts=cuts_on_lep,
                              skipNotMatched=False
    )                             
@@ -700,7 +699,7 @@ def KEEMC (process,Jpsi=[],use_PF=False,use_1lowPt_1PF=False):
    RecoE2 = genRecoMatcher( recoInput="Electron",
                              genInput = "genE2",
                              output = "recoE2",
-                             branches = ["pt","eta","phi","vx","vy","vz","isPF","pfmvaId","isPFoverlap","mvaId","charge","LooseID","MediumID","TightID","convVeto"],
+                             branches = ["pt","eta","phi","vx","vy","vz","isPF","isPFoverlap","charge","PFEleMvaID_Fall17NoIsoV2wpLoose","PFEleMvaID_Fall17NoIsoV2wp90","PFEleMvaID_Fall17NoIsoV2wp80","convVeto"],
                              cuts=cuts_on_lep,
                              skipNotMatched=False
    )                             
