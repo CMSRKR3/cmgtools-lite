@@ -1027,5 +1027,47 @@ def KstarKEEMC (process,Jpsi=[],use_PF=False,use_1lowPt_1PF=False):
 
    return process  
 
+def TriggerWeightsMC(process):
+  from PhysicsTools.NanoAODTools.postprocessing.modules.bpark.functionWrapper import functionWrapper
 
+  triggers = [
+          "L1_DoubleEG11_er1p2_dR_Max0p6",
+          "L1_DoubleEG10p5_er1p2_dR_Max0p6",
+          "L1_DoubleEG10_er1p2_dR_Max0p6",
+          "L1_DoubleEG9p5_er1p2_dR_Max0p6",
+          "L1_DoubleEG9_er1p2_dR_Max0p7",
+          "L1_DoubleEG8p5_er1p2_dR_Max0p7",
+          "L1_DoubleEG8_er1p2_dR_Max0p7",
+          "L1_DoubleEG7p5_er1p2_dR_Max0p7",
+          "L1_DoubleEG7_er1p2_dR_Max0p8",
+          "L1_DoubleEG6p5_er1p2_dR_Max0p8",
+          "L1_DoubleEG6_er1p2_dR_Max0p8",
+          "L1_DoubleEG5p5_er1p2_dR_Max0p8",
+          "L1_DoubleEG5_er1p2_dR_Max0p9",
+          "L1_DoubleEG4p5_er1p2_dR_Max0p9",
+          "L1_DoubleEG4_er1p2_dR_Max0p9",
+          "HLT_DoubleEle10_eta1p22_mMax6",
+          "HLT_DoubleEle9p5_eta1p22_mMax6",
+          "HLT_DoubleEle9_eta1p22_mMax6",
+          "HLT_DoubleEle8p5_eta1p22_mMax6",
+          "HLT_DoubleEle8_eta1p22_mMax6",
+          "HLT_DoubleEle7p5_eta1p22_mMax6",
+          "HLT_DoubleEle7_eta1p22_mMax6",
+          "HLT_DoubleEle6p5_eta1p22_mMax6",
+          "HLT_DoubleEle6_eta1p22_mMax6",
+          "HLT_DoubleEle5p5_eta1p22_mMax6",
+          "HLT_DoubleEle5_eta1p22_mMax6",
+          "HLT_DoubleEle4p5_eta1p22_mMax6",
+          "HLT_DoubleEle4_eta1p22_mMax6",
+  ]
+
+  TriggerWeightVars = functionWrapper(
+      functionName="TriggerWeight",
+      collections=triggers,
+      createdBranches=["trig_wgt"]
+  )
+
+  process.append(TriggerWeightVars)
+
+  return process
 

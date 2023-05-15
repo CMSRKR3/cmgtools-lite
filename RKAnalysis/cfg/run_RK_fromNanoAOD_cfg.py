@@ -21,6 +21,10 @@ def byCompName(components, regexps):
     return [ c for c in components if any(re.match(r, c.name) for r in regexps) ]
 
 
+def add_SkimCuts(cuts, newcuts):
+    if isinstance(newcuts, str): newcuts = [newcuts]
+    return ''.join([cuts[:cuts.index(')')],' &&  '+' && '.join(newcuts),cuts[cuts.index(')'):]])
+
 # parse options
 filterSample = str(getHeppyOption("filterSample",""))
 mc = getHeppyOption("mc",False)
@@ -95,7 +99,7 @@ br_in = ""
 if kmumu and data:
   br_in = "branchRkmumu_in.txt"
   #loose cuts
-  Bcuts=dict ( Pt= 3.0, MinMass=4.7, MaxMass=5.7, LxySign=0, Cos2D=0, Prob=0.001, L1Pt= 2.0, L2Pt= 2.0, KPt= 1.0, Mllmin=0, Mllmax=5.0 )
+  Bcuts=dict ( Pt= 3.0, MinMass=4.5, MaxMass=6, LxySign=0, Cos2D=.9, Prob=0.001, L1Pt= 2.0, L2Pt= 2.0, KPt= 1.0, Mllmin=2.8, Mllmax=3.3)
   # tag cuts
 #  Bcuts=dict ( Pt= 10.5, MinMass=4.7, MaxMass=6.0, LxySign=1.0, Cos2D=0.99, Prob=0.001, L1Pt= 7.2, L2Pt= 1.0, KPt= 1.0, Mllmin=0, Mllmax=5 )
   # probe cuts 
@@ -106,7 +110,7 @@ if kmumu and data:
 
 if kee and data:
   br_in = "branchRkee_in.txt"
-  Bcuts=dict(Pt=0, MinMass=0, MaxMass=9999., LxySign=0, Cos2D=0, Prob=0, L1Pt= 0, L2Pt= 0, KPt= 0, Mllmin=0, Mllmax=9999. ) # no -preselection cuts 
+  Bcuts=dict(Pt=0, MinMass=4.5, MaxMass=5.7, LxySign=0, Cos2D=.9, Prob=0.01, L1Pt= 0, L2Pt= 0, KPt= 0, Mllmin=2.8, Mllmax=3.3)
   if onlyPFe:
      Bcuts=dict ( Pt=0, MinMass=0, MaxMass=6, LxySign=0, Cos2D=0, Prob=0, L1Pt= 0, L2Pt= 0, KPt= 0, Mllmin=0, Mllmax=5 ) # no -preselection cuts
   if onlyLowPtAndPFe:
@@ -115,6 +119,7 @@ if kee and data:
      print "Only PF e flag AND only lowpT andPF e flag enabled. Results may be invalid. Terminate"
      exit()
   BparkSkim=SkimCuts("BToKEE",Bcuts)
+  # BparkSkim=add_SkimCuts(BparkSkim,['L1_DoubleEG6_er1p2_dR_Max0p8==1','HLT_DoubleEle4_eta1p22_mMax6==1'])
   modules = KEEData(modules,Bcuts,onlyPFe,onlyLowPtAndPFe)
 
 
@@ -158,7 +163,8 @@ if kee and mc:
      modules = KEEMC(modules,["443->11,-11"],onlyPFe,onlyLowPtAndPFe)
   elif not jpsi and psi2s:
      modules = KEEMC(modules,["100443->11,-11"],onlyPFe,onlyLowPtAndPFe)
-  BparkSkim="BToKEE_fit_cos2D>0"
+  BparkSkim=""
+  modules = TriggerWeightsMC(modules)
 
 if kstaree_piee and mc:
   br_in = "branchRkee_in.txt"
