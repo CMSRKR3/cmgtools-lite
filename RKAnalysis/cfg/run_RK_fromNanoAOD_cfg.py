@@ -114,7 +114,7 @@ if kee and data:
   if onlyPFe and onlyLowPtAndPFe: 
      print "Only PF e flag AND only lowpT andPF e flag enabled. Results may be invalid. Terminate"
      exit()
-  BparkSkim=SkimCuts("BToKEE",Bcuts)
+  #BparkSkim=SkimCuts("BToKEE",Bcuts)
   modules = KEEData(modules,Bcuts,onlyPFe,onlyLowPtAndPFe)
 
 
@@ -135,7 +135,7 @@ if kstarmumu_pimumu and mc:
   if not jpsi and not psi2s:
      modules = KstarPiMuMuMC(modules,[],tagmu,trgUnbiased)
   elif jpsi and not psi2s:
-     modules = KstarPiMuMuMC(modules,["443->13,-13","313->321,-211"],tagmu,trgUnbiased)
+     modules = KstarPiMuMuMC(modules,["443->13,-13","323->310,-211"],tagmu,trgUnbiased)
   elif not jpsi and psi2s:
      modules = KstarPiMuMuMC(modules,["100443->13,-13","313->321,-211"],tagmu,trgUnbiased)
   BparkSkim=""
@@ -157,8 +157,9 @@ if kee and mc:
   elif jpsi and not psi2s:
      modules = KEEMC(modules,["443->11,-11"],onlyPFe,onlyLowPtAndPFe)
   elif not jpsi and psi2s:
-     modules = KEEMC(modules,["100443->11,-11"],onlyPFe,onlyLowPtAndPFe)
-  BparkSkim="BToKEE_fit_cos2D>0"
+     modules = KEEMC(modules,["100443->11,-11","323->310,211"],onlyPFe,onlyLowPtAndPFe)
+  BparkSkim=""
+  modules = TriggerWeightsMC(modules)
 
 if kstaree_piee and mc:
   br_in = "branchRkee_in.txt"
@@ -169,16 +170,20 @@ if kstaree_piee and mc:
   elif not jpsi and psi2s:
      modules = KstarPiEEMC(modules,["100443->11,-11","313->321,-211"],onlyPFe,onlyLowPtAndPFe)
   BparkSkim=""
+  modules = TriggerWeightsMC(modules)
+
 
 if kstaree_kee and mc:
   br_in = "branchRkee_in.txt"
   if not jpsi and not psi2s:
-     modules = KstarKEEMC(modules,["313->321,-211"],onlyPFe,onlyLowPtAndPFe)
+     modules = KstarKEEMC(modules,["323->310,211"],onlyPFe,onlyLowPtAndPFe)
   elif jpsi and not psi2s:
-     modules = KstarKEEMC(modules,["443->11,-11","313->321,-211"],onlyPFe,onlyLowPtAndPFe)
+     modules = KstarKEEMC(modules,["443->11,-11","323->310,211"],onlyPFe,onlyLowPtAndPFe)
   elif not jpsi and psi2s:
      modules = KstarKEEMC(modules,["100443->11,-11","313->321,-211"],onlyPFe,onlyLowPtAndPFe)
   BparkSkim=""
+  modules = TriggerWeightsMC(modules)
+
 
 
 # only read the branches in this file - for speed deactivate unescairy stuff
