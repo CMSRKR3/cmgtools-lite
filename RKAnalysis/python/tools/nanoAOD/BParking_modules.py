@@ -165,7 +165,7 @@ def KEEData ( process, Bcuts,use_PF=False,use_1LowPt_1PF=False):
                                        "l1_iso04_dca","l2_iso04_dca",
                                        "b_iso04_dca","k_iso04_dca",
                                        "k_svip3d","k_svip3d_err",
-                                       "l1_n_isotrk_dca","l2_n_isotrk_dca","k_n_isotrk_dca"
+                                       "l1_n_isotrk_dca","l2_n_isotrk_dca","k_n_isotrk_dca", "quad_BDT"
                             ],
                             flat = False
     )
